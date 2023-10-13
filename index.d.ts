@@ -8,9 +8,10 @@ declare module 'languagedetect' {
      */
     class LanguageDetect {
         /**
-         * No parameters required
-         */
-        constructor();
+        * @param params.languageType
+        * @param params.supportLangs languge wanted output
+        */
+        constructor(params: { languageType: string; supportLangs: string[]; });
 
         /**
          * Detects the closeness of a sample of text to the known languages
